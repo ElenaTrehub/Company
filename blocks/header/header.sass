@@ -1,0 +1,91 @@
+.header
+  &__top
+    background: $main-color
+  &__btn
+    float: right
+    background: $second-color
+    line-height: 36px
+    font-family: $main-font
+    color: #1b1b1b
+    padding: 5px 20px 4px 50px
+    font-size: 16px
+    position: relative
+    &:before
+      content: "\f0b1"
+      font-family: 'icomoon'
+      position: absolute
+      left: 22px
+      color: $main-color
+    &-menu
+      display: none
+      font-size: 28px
+      margin-top: 10px
+      color: $main-color
+  &__contact:after
+    content: ''
+    clear: both
+    display: block
+  &__phone,
+  &__email
+    color: #cbcacb
+    letter-spacing: 0.25px
+    line-height: 45px
+    position: relative
+  &__phone
+    padding-left: 20px
+    padding-right: 30px
+    &:before
+      content: "\f095"
+      font-family: 'icomoon'
+      position: absolute
+      left: 0
+      color: $second-color
+  &__email
+    padding-left: 24px
+    &:before
+      content: "\f003"
+      font-family: 'icomoon'
+      position: absolute
+      left: 0
+      color: $second-color
+  &__content
+    padding: 34px 0px 23px
+    &-inner
+      display: flex
+      justify-content: space-between
+  &__logo img
+    height: 50px
+.menu
+  li
+    display: inline-block
+  a
+    color: #323232
+    font-size: 16px
+    line-height: 36px
+    border: 1px solid transparent
+    font-family: $main-font
+    padding: 0px 16px
+    transition: all 0.4s
+    &:hover
+      border-color: $second-color
+  li+li
+    padding-left: 10px
+
+#modal
+  display: none
+  width: 300px
+  input
+    display: block
+    width: 100%
+    margin-bottom: 20px
+    height: 40px
+    outline: none
+    border: 1px solid #e6e6e6
+    padding: 0px 10px
+    font-family: $main-font
+    font-weight: 400
+  input[type="submit"]
+    background-color: $second-color
+    border: none
+
+
